@@ -3,13 +3,21 @@ Colors used:
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
+header {
+  background-color: #ABD1C9;
+  padding: 10px;
+  margin: 0px;
+  border-bottom: 3px solid #F1BFB1;
+}
+
 body {
-    background-color: #ffffff;
+    background-color: #FDFEFE;
     font-family: 'Oswald', sans-serif;
     font-size: 16px; 
     font-weight: 200; 
     line-height: 1.6; 
     color: #030404;
+    margin: 0px !important;
   }
   
   h1, h2, h3, h4 {
@@ -48,29 +56,13 @@ body {
   img {
     width: 100%;
   }
-  a{
-    font-weight: 300;
-    color: blue;
-  text-decoration: none; /* No underlining */
+  a {
+  
   }
 
-  a:hover {
-  color: green;
-  text-decoration: underline; /* Underlining when hovering over a link */
-  }
+  .navlink {
 
-  a:visited { /* visited link */
-    color: purple;
-  }
-
-  a:active { /* selected link */
-    color: red;
-  }
-
-  a:hover,
-  a:focus {
-  color: green;
-  text-decoration: underline;
+    .
   }
 
  .button {
@@ -85,7 +77,16 @@ body {
   }
 
   .button:hover {
-    color:white
-    text-decoration: underline;
-    border-bottom: 2px solid green;
+    background-color: darkblue;
+  }
+
+  .logo {
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 26pt
+  }
+
+  .social {
+    height: 48px;
+    width: auto;
+    margin: 8px;
   }
