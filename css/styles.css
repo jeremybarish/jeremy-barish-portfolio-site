@@ -1,13 +1,47 @@
-/*
-Colors used:
-Primary Color (Blue): #05676e;
-Secondary Color (Green): #489c79;
-*/
+
+
+
 header {
   background-color: #ABD1C9;
+  position: fixed;
   padding: 10px;
   margin: 0px;
   border-bottom: 3px solid #F1BFB1;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.logo {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30pt;
+  font-weight: bold;
+  margin: 0;
+}
+
+* { 
+  box-sizing: border-box;
 }
 
 body {
@@ -17,7 +51,7 @@ body {
     font-weight: 200; 
     line-height: 1.6; 
     color: #030404;
-    margin: 0px !important;
+    margin: 0px;
   }
   
   h1, h2, h3, h4 {
@@ -48,31 +82,31 @@ body {
     font-weight: 300;
   }
 
-  span{
+  span {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+  }
+
+  .p-header {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
   }
  
   img {
     width: 100%;
   }
-  a {
+
   
-  }
-
-  .navlink {
-
-    .
-  }
 
  .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: blue;
-    color: #ffffff; /* needed to override the default link color */
+    color: #ffffff; 
     font-weight: 400;
     padding: 10px;
-    border-radius: 10px;
-    border-bottom: 0cap solid #994c30; /* width of the border, type, color */
+    text-align: center;
+    width: 120px;
+    border-radius: 10px; 
     transition: 0.2s opacity;
   }
 
@@ -80,13 +114,64 @@ body {
     background-color: darkblue;
   }
 
-  .logo {
-    font-family: 'Rubik Doodle Shadow', system-ui;
-    font-size: 26pt
+  .button:focus {
+    color: darkblue;
   }
 
+  .navlink {
+    display: inline-block;
+  }
+
+  .navlink:visited {
+    color: #030404;
+  }
+
+  .navlink:focus {
+    color: red;
+  }
+
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50pt;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  
   .social {
     height: 48px;
     width: auto;
     margin: 8px;
+  }
+
+
+  /* Layout styling */
+
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+
+  #hero h1 {
+    text-align: center; /* Centers text */
+    margin: 0;
+    padding: 0.67em 0;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #hero p {
+    text-align: center;
+  }
+  #hero {
+    background-color: #FDFEFE;
+  }
+ 
+  main {
+    padding-top: 174px;
   }
