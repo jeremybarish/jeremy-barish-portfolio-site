@@ -8,7 +8,6 @@ header {
   margin: 0px;
   border-bottom: 3px solid #F1BFB1;
   text-align: center;
-  width: 100%;
 }
 
 nav {
@@ -29,16 +28,18 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #4a4a4a;
+  color: #030404;
 }
 
-.logo {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30pt;
-  font-weight: bold;
-  margin: 0;
-}
+h3.logo {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 15px;
+  }
 
 * { 
   box-sizing: border-box;
@@ -129,14 +130,6 @@ body {
   .navlink:focus {
     color: red;
   }
-
-  .logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50pt;
-    font-weight: bold;
-    margin: 0;
-  }
-
   
   .social {
     height: 48px;
@@ -154,6 +147,12 @@ body {
 
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   #hero h1 {
@@ -175,3 +174,43 @@ body {
   main {
     padding-top: 174px;
   }
+
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    width:auto;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+  
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
