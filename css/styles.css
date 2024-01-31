@@ -88,18 +88,13 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
   }
-
-  .p-header {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-  }
  
   img {
     width: 100%;
   }
  
  .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block; 
     background-color: blue;
     color: #ffffff; 
     font-weight: 400;
@@ -136,6 +131,11 @@ body {
     width: auto;
     margin: 25px;
   }
+
+  .social-icons > a {
+    text-decoration: none;
+  }
+    
 
   .animation {
     width: 100%;
@@ -184,6 +184,16 @@ body {
     width: 100%;
   }
 
+  #contact h2 {
+    padding: 20px 0px 0px 0px;
+    margin: 5px
+    ;
+  }
+
+  #contact p {
+    margin: 0px 0px 32px 0px;
+  }
+
 
   /* Layout styling */
 
@@ -204,16 +214,29 @@ body {
  
 
   #hero h1 {
-    text-align: center; /* Centers text */
+    text-align: center; 
     margin: 0;
-    padding: 0.67em 0;
-    padding: 20px 0;
+
+    padding: 5px 0;
     display: inline-block;
     width: 100%;
   }
 
+  #hero h2 {
+    text-align: center; 
+    margin: 0;
+    padding: 0.67em 0;
+    padding: 5px 0;
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+  }
+
   #hero p {
     text-align: center;
+    font-weight: 300;
+    font-size: 1.35em;;
+    margin: 0px
   }
   #hero {
     background-color: #FDFEFE;
