@@ -21,10 +21,6 @@ nav > ul {
   padding: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -32,11 +28,44 @@ nav > ul > li > a {
   color: #030404;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 h3.logo {
     display: inline-block;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30pt;
+    font-size: 20pt;
     font-weight: bold;
     margin: 0;
     padding: 0 15px;
@@ -228,9 +257,8 @@ body {
 
   #hero h2 {
     text-align: center; 
-    margin: 0;
-    padding: 0.67em 0;
-    padding: 5px 0;
+    margin:  -10px 0 0 0;
+    padding: -10px 0 0 0;
     display: inline-block;
     width: 100%;
     font-weight: 400;
@@ -240,14 +268,14 @@ body {
     text-align: center;
     font-weight: 300;
     font-size: 1.35em;;
-    margin: 0px
+    margin: 5px
   }
   #hero {
     background-color: #FDFEFE;
   }
  
   main {
-    padding-top: 174px;
+    padding-top: 100px;
   }
 
   
@@ -263,7 +291,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    /* margin-top: 4px; */
   }
 
   main {
@@ -276,6 +304,23 @@ Medium devices (640px and larger)
   [class*="col-"] {
     float: left;
     padding: 10px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  h3.logo {
+    font-size: 30px;
+    margin-top: 10px;
   }
   
 }
