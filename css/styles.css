@@ -56,7 +56,7 @@
 header {
   background-color: #ABD1C9;
   position: fixed;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0px;
@@ -118,11 +118,11 @@ nav > ul > li > a {
 h3.logo {
     display: inline-block;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 20pt;
     font-weight: bold;
     margin: 0;
-    padding: 0 15px;
+    padding: 0 15px 15px 15px;
   }
 
 * { 
@@ -234,7 +234,7 @@ body {
   }
 
   #contact p {
-    margin: 0px 0px 32px 0px;
+    margin: 0px 0px 15px 0px;
   }
 
 
@@ -301,7 +301,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    /* margin-top: 4px; */
+    margin-top: 4px;
   }
 
   main {
@@ -320,6 +320,10 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
+  .navtoggle {
+    margin-bottom: -10px;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -330,7 +334,7 @@ Medium devices (640px and larger)
 
   h3.logo {
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   
 }
