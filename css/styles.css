@@ -167,6 +167,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 10px;
   }
 
   span {
@@ -194,6 +195,7 @@ body {
     transition-duration: 0.2s;
     transition-property: opacity;
     text-decoration: none;
+    margin-top: 10px;
   }
 
   .button:hover {
